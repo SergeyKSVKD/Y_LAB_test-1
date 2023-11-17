@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e13f263a.css",
-    "main.js": "/static/js/main.49075bc3.js",
-    "static/media/rubik-regular-webfont.ttf": "/static/media/rubik-regular-webfont.373f5790685b301604a3.ttf",
-    "static/media/rubik-regular-webfont.woff": "/static/media/rubik-regular-webfont.711cb8755c94b51f807f.woff",
-    "static/media/rubik-regular-webfont.woff2": "/static/media/rubik-regular-webfont.4b4c679852a6d5cdb514.woff2",
-    "static/media/fingerprint2.png": "/static/media/fingerprint2.766cf88ca0597e1113d1.png",
-    "static/media/fingerprint1.png": "/static/media/fingerprint1.65be976c6c48ff37094d.png",
-    "index.html": "/index.html",
-    "main.e13f263a.css.map": "/static/css/main.e13f263a.css.map",
-    "main.49075bc3.js.map": "/static/js/main.49075bc3.js.map"
+    "main.css": "/Y_LAB_test-1/static/css/main.cd5905fb.css",
+    "main.js": "/Y_LAB_test-1/static/js/main.49075bc3.js",
+    "static/media/rubik-regular-webfont.ttf": "/Y_LAB_test-1/static/media/rubik-regular-webfont.373f5790685b301604a3.ttf",
+    "static/media/rubik-regular-webfont.woff": "/Y_LAB_test-1/static/media/rubik-regular-webfont.711cb8755c94b51f807f.woff",
+    "static/media/rubik-regular-webfont.woff2": "/Y_LAB_test-1/static/media/rubik-regular-webfont.4b4c679852a6d5cdb514.woff2",
+    "static/media/fingerprint2.png": "/Y_LAB_test-1/static/media/fingerprint2.766cf88ca0597e1113d1.png",
+    "static/media/fingerprint1.png": "/Y_LAB_test-1/static/media/fingerprint1.65be976c6c48ff37094d.png",
+    "index.html": "/Y_LAB_test-1/index.html",
+    "main.cd5905fb.css.map": "/Y_LAB_test-1/static/css/main.cd5905fb.css.map",
+    "main.49075bc3.js.map": "/Y_LAB_test-1/static/js/main.49075bc3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e13f263a.css",
+    "static/css/main.cd5905fb.css",
     "static/js/main.49075bc3.js"
   ]
 }
