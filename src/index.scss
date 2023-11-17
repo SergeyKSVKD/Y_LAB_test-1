@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'rubik';
+  src: url('./shared/fonts/rubik-regular-webfont.woff2') format('woff2'),
+       url('./shared/fonts/rubik-regular-webfont.woff') format('woff'),
+       url('./shared/fonts/rubik-regular-webfont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0px;
+}
+
+html, body {
+  margin: 0;
+  // scrollbar-gutter: stable;
+  font-family: var(--family);
+  font-size: 10px;
+  background: var(--background);
+  color: var(--text-color);
+  user-select: none;
+}
+
+:root {
+  /* Typography */
+  --family: 'rubik';
+  --fs-mini: 1.4rem;
+  --fs-sm: 1.6rem;
+  --fs-md: 2.2rem;
+  --fs-lg: 3.2rem;
+  --fw-light: 400;
+  --fw-normal: 600;
+  --fw-bold: 700;
+  --lh: 24px;
+
+  --light-gray: #f5f6f8;
+  --white: rgba(255,255,255,0.8);
+  --red: #e31235;
+  --gray: #494e53;
+  --orange: #ec971f;
+  --background: linear-gradient( 90deg,  rgba(49,75,90,1) 48.8%, rgb(0, 95, 119) 94.9% );
+  --text-color: hsl(260, 12%, 90%);
+  
+
+  /* Shadow */
+  --shadow: inset 4px 3px 8px 0px rgba(0, 0, 0, 0.3), 
+  10px 10px 10px rgba(0, 0, 0, 0.3), 
+  10px 10px 10px rgba(0, 0, 0, 0.3), 
+  inset -20px -20px 25px rgba(255, 255, 255, 0.09);
+}

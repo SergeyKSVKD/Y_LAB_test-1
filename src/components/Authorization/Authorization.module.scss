@@ -1,0 +1,234 @@
+.layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient( 90deg,  rgba(29, 30, 31, 0.851) 48.8%, rgb(2, 34, 42) 94.9% );
+    z-index: 100;
+}
+
+.authorization {
+    position: absolute;
+    transform: scale(0.5);
+    z-index: 100;
+    width: 620px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+            transition: 2s;
+        }
+}
+
+
+.authorization::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -37%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.logo {
+    text-align: center;
+    color: white;
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: #303030 2px 0 10px;
+}
+
+.fingerprint {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+}
+
+.input__container {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    color: white;
+    margin-bottom: 40px;
+}  
+
+.input {
+    position: absolute;
+    width: 250px;
+    font-size: 16px;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    z-index: 1;
+    color: #494e53;
+        &:focus.invalid {
+            border: 2px solid red;
+        }
+}
+
+.input:focus + .text {
+    top: -30px;
+    left: -10px;
+}
+
+.input:focus ~ .line {
+    height: 100%;
+}
+
+ .input:valid ~ .line {
+    height: 100%;
+}
+
+ .input:valid ~ .text {
+    top: -30px;
+    left: -10px;
+}
+
+.text {
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 32px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 250px;
+    height: 2px;
+    background: white;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.submit {
+    border: none;
+    width: 250px;
+    padding: 6px 98px;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    color: #494e53;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 6px;
+        &.unactive {
+            background-color: rgba(0, 0, 0, 0.1);
+            &:hover {
+                cursor: not-allowed
+            }
+        }
+}
+
+.blockquote {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.blockquote {
+    position: absolute;
+    bottom: 88px;
+    left: -15px;
+    width: 260px;
+    font-size: 12px;
+    line-height: 14px;
+    border: 2px solid red;
+    color: #303030;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 30px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: inset 4px 3px 8px 0px rgba(0, 0, 0, 0.3), 
+    10px 10px 10px rgba(0, 0, 0, 0.3), 
+    10px 10px 10px rgba(0, 0, 0, 0.3), 
+    inset -20px -20px 25px rgba(255, 255, 255, 0.09);;
+        &::after {
+            content:"";
+            position: absolute;
+            border: 2px solid red;
+            border-radius: 0 50px 0 0;
+            width: 88px;
+            height: 40px;
+            bottom: -40px;
+            left: 50px;
+            border-bottom: none;
+            border-left: none;
+            z-index: 2; 
+            box-sizing: border-box;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            border: 1px solid white;
+            bottom: -1px;
+            left: 101px;
+            z-index: 1;
+        }
+}
+
+.submit__container {
+    width: max-content;
+        &:hover .blockquote {
+            color: #303030;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 1;
+            visibility: visible;
+        }
+}
+
+.logout {
+    border: 3px solid #303030;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+        &:hover {
+            cursor: pointer;
+        }
+}
